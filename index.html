@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt & Generate QR Code</title>
+    <script src="https://unpkg.com/html5-qrcode" defer></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="encrypt-section" id="encryptSection">
+            <h1>Encrypt, Encode, and Protect</h1>
+            <p>Encrypt your message and share it securely with a QR code—fast, safe, and easy.</p>
+            <textarea id="messageInput" rows="5" placeholder="Enter your message..."></textarea>
+            <button id="generateBtn">Generate QR Code</button>
+        </div>
+
+        <div id="qrPopup" class="qr-popup">
+            <h2>Encrypted QR Code:</h2>
+            <img id="qrImage" src="" alt="QR Code">
+            <br>
+            <button id="downloadBtn">Download</button>
+            <button id="generateAgain">Generate Again</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Jeremiah Rey. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
